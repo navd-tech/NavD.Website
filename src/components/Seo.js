@@ -13,8 +13,8 @@ const getSchemaOrgJSONLD = ({ url, title }) => [
   },
 ];
 
-const Seo = ({ title, description, url, image }) => {
-  const pageTitle = `${title} - ${config.siteName}`;
+const Seo = ({ title, description, url, image, index }) => {
+    const pageTitle = index? `${title}`: `${title} - ${config.siteName}`;
 
   const schemaOrgJSONLD = getSchemaOrgJSONLD({
     url,
@@ -24,6 +24,7 @@ const Seo = ({ title, description, url, image }) => {
   });
 
   return (
+
     <Helmet
       htmlAttributes={{
         lang: config.siteLanguage,
@@ -31,6 +32,7 @@ const Seo = ({ title, description, url, image }) => {
       }}
     >
       {/* General tags */}
+      
       <title>{pageTitle}</title>
       <meta name="description" content={description} />
       <meta name="image" content={image} />

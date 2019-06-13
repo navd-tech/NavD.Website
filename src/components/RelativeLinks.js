@@ -8,7 +8,7 @@ const RelativeLinks = () => {
         <Link
           to="home"
           smooth
-          spy
+          hashSpy
           activeClass="active-link"
           className="nav-link"
         >
@@ -19,7 +19,7 @@ const RelativeLinks = () => {
         <Link
           to="service"
           smooth
-          spy
+          hashSpy
           activeClass="active-link"
           className="nav-link"
         >
@@ -30,7 +30,7 @@ const RelativeLinks = () => {
         <Link
           to="counter"
           smooth
-          spy
+          hashSpy
           activeClass="active-link "
           className="nav-link"
         >
@@ -41,7 +41,7 @@ const RelativeLinks = () => {
         <Link
           to="contact"
           smooth
-          spy
+          hashSpy
           activeClass="active-link"
           className="nav-link"
         >

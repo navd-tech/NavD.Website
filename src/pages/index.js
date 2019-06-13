@@ -8,6 +8,7 @@ import config from '../utils/config';
 const IndexPage = () => (
   <Layout>
     <Seo
+    index 
       title={config.siteName}
       description={config.description}
       url={`${config.siteUrl}`}

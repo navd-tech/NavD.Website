@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withPrefix } from 'gatsby';
 
 export default class HTML extends React.Component {
   render() {

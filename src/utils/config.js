@@ -15,5 +15,6 @@ module.exports = {
     themeColor: '#522bac',
     useCoolies: false,
     redirectionTimeout: 5000,
-    contactapi: " http://localhost:7071/api"
+    contactapi: //" http://localhost:7071/api"
+    "https://contactapifunctions20190612035239.azurewebsites.net/api"
   };

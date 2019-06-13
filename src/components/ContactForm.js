@@ -146,8 +146,7 @@ class ContactForm extends Component {
       })
       .catch(error => {
         throw new Error(error);
-      })
-      .then(response => {});
+      });
   };
 
   render() {
