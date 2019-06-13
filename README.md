@@ -1,3 +1,4 @@
+[![Build Status](https://dev.azure.com/TAGeoforce/Navd.Website/_apis/build/status/navd-tech.NavD.Website?branchName=master)](https://dev.azure.com/TAGeoforce/Navd.Website/_build/latest?definitionId=4&branchName=master)
 # NavD.Website
 ### The AI Maritime Platform | NavD
 
