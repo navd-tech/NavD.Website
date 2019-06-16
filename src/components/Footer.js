@@ -13,7 +13,7 @@ class footerMenu extends Component {
             <div className="row">
               <div className="copyright col-sm-6 col-xs-12">
                 <p>
-                  <a href="./privacy">Acceptance of Terms & Privacy</a> <br />{' '}
+                  <a href="./privacy/">Acceptance of Terms & Privacy</a> <br />{' '}
                   Copyright &copy; {this.getYear()} NavD Technologies, Inc. All
                   Rights Reserved
                 </p>

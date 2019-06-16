@@ -94,7 +94,7 @@ class Menu extends Component {
               <ul className="navbar-nav nav-menu ml-auto">
                 {links}
                 <li className="nav-item">
-                  <a id="pricing_link" className="nav-link" href="/pricing">
+                  <a id="pricing_link" className="nav-link" href="/pricing/">
                     Pricing
                   </a>
                 </li>
