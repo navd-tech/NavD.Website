@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Christos Charmatzis <christos.charmatzis@navd.ai>",
   "dependencies": {
+    "dotenv": "^8.0.0",
     "formik": "^1.5.7",
     "gatsby": "^2.5.7",
     "gatsby-background-image": "^0.7.0",
