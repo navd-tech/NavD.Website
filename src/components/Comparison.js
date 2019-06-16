@@ -32,7 +32,7 @@ const Comparison = () => {
               <a
                 id="pro-link"
                 className="btn btn-lg btn-block btn-primary"
-                href="/pricingcontact"
+                href="/pricingcontact/"
               >
                 Contact us
               </a>
@@ -60,7 +60,7 @@ const Comparison = () => {
               <a
                 id="pro-link"
                 className="btn btn-lg btn-block btn-primary"
-                href="/pricingcontact"
+                href="/pricingcontact/"
               >
                 Contact us
               </a>
@@ -94,7 +94,7 @@ const Comparison = () => {
               <a
                 id="enterprise-link"
                 className="btn btn-lg btn-block btn-primary"
-                href="/pricingcontact"
+                href="/pricingcontact/"
               >
                 Contact us
               </a>
