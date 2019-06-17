@@ -12,7 +12,7 @@ export default class TermsConditions extends React.Component {
         <Seo
           title="Pricacy"
           description="Privacy Policy"
-          url="/privacy"
+          url="/privacy/"
           image={config.image}
         />
         <TermsAndConditionDescription />

@@ -12,7 +12,7 @@ class PricingContact extends Component {
         <Seo
           title="Pricing Conatct"
           description="Contact us for pricing plans"
-          url="/pricingconatct"
+          url="/pricingcontact/"
           image={config.image}
         />
         <PricingContactForm />
