@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'gatsby';
 
 class footerMenu extends Component {
   getYear() {
@@ -13,9 +14,10 @@ class footerMenu extends Component {
             <div className="row">
               <div className="copyright col-sm-6 col-xs-12">
                 <p>
-                  <a href="./privacy/">Acceptance of Terms & Privacy</a> <br />{' '}
-                  Copyright &copy; {this.getYear()} NavD Technologies, Inc. All
-                  Rights Reserved
+                  {/* TODO fix the relative link */}
+                  <Link to="/privacy/">Acceptance of Terms & Privacy</Link>{' '}
+                  <br /> Copyright &copy; {this.getYear()} NavD Technologies,
+                  Inc. All Rights Reserved
                 </p>
               </div>
               <div className="credits col-sm-6 col-xs-12">
