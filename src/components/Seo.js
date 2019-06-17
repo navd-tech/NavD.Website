@@ -3,6 +3,8 @@ import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 import config from '../utils/config';
 
+
+
 const getSchemaOrgJSONLD = ({ url, title }) => [
   {
     '@context': 'http://schema.org',
@@ -15,9 +17,10 @@ const getSchemaOrgJSONLD = ({ url, title }) => [
 
 const Seo = ({ title, description, url, image, index }) => {
     const pageTitle = index? `${title}`: `${title} - ${config.siteName}`;
+    const targetUrl = process.env.GATSBY_TARGET_ADDRESS + url;
 
   const schemaOrgJSONLD = getSchemaOrgJSONLD({
-    url,
+    targetUrl,
     pageTitle,
     image,
     description,
@@ -43,7 +46,7 @@ const Seo = ({ title, description, url, image, index }) => {
       </script>
 
       {/* OpenGraph tags */}
-      <meta property="og:url" content={url} />
+      <meta property="og:url" content={targetUrl} />
       <meta property="og:title" content={pageTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />

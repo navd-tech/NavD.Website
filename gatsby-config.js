@@ -1,15 +1,23 @@
+
 const config = require('./src/utils/config');
 
-require("dotenv").config({
+require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 });
+
+const targetAddress = `${process.env.GATSBY_TARGET_ADDRESS}` || `http://navd.local`;
 
 module.exports = {
   siteMetadata: {
     title: 'The AI maritime Platform | NavD',
-    description: 'NavD is a cutting edge platform for AI solutions and large scale spatial analytics in the marine domain.',
+    description:
+      'NavD is a cutting edge platform for AI solutions and large scale spatial analytics in the marine domain.',
     author: 'christos.charmatzis',
-    siteUrl: 'https://navd.ai'
+    siteUrl: targetAddress,
+  },
+  proxy: {
+    prefix: "/api",
+    url: `${process.env.GATSBY_contactapi}`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,
@@ -44,11 +52,17 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-html-attributes',
       options: {
-        lang: 'en'
-      }
+        lang: 'en',
+      },
+    },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: targetAddress,
+      },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-     `gatsby-plugin-offline`
+    `gatsby-plugin-offline`,
   ],
-}
+};

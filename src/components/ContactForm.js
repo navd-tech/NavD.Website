@@ -124,8 +124,9 @@ class ContactForm extends Component {
         this.state.formControls[formElementId].value,
       );
     }
+    const url = config.DEBUG ? '/api/HomeContact' : `${config.contactapi}/api/HomeContact`;
 
-    fetch(`${config.contactapi}/HomeContact`, {
+    fetch(url, {
       method: 'POST',
       body: formData.toString(),
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
