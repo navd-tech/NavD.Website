@@ -14,7 +14,6 @@ class footerMenu extends Component {
             <div className="row">
               <div className="copyright col-sm-6 col-xs-12">
                 <p>
-                  {/* TODO fix the relative link */}
                   <Link to="/privacy/">Acceptance of Terms & Privacy</Link>{' '}
                   <br /> Copyright &copy; {this.getYear()} NavD Technologies,
                   Inc. All Rights Reserved
