@@ -154,8 +154,9 @@ class PricingContactForm extends Component {
         this.state.formControls[formElementId].value,
       );
     }
+    const url = config.DEBUG ? '/api/PricingContact' : `${config.contactapi}/api/PricingContact`
 
-    fetch(`${config.contactapi}/PricingContact`, {
+    fetch(url, {
       method: 'POST',
       body: formData.toString(),
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
